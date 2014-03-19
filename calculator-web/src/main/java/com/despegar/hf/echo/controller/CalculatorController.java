@@ -57,6 +57,7 @@ public class CalculatorController {
         return new ResponseEntity<String>(result, HttpStatus.OK);
     }
 
+    // <sd
     @RequestMapping(value = "/memoryClear/{value1}/{value2}", method = RequestMethod.GET)
     public ResponseEntity<String> memoryClear(@PathVariable("value1") BigDecimal value1,
         @PathVariable("value2") BigDecimal value2) {
